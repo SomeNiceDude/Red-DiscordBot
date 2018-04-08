@@ -1,0 +1,48 @@
+Who takes care of the Shadow Elves in the Shadow Square below El Rano?`Cora
+Who is the Former Consul of the Amistad Federation?`Averardo Sforza, Averardo
+What's the capital of the Aqua Elves?`El Rano`ElRano
+What is the highest achievable crafting and taming stage?`Legendary
+Which Skill increases the Physical and Magical Damage of all nearby allies by 25%?`God's Wrath`Gods Wrath
+What is the name of this Spell? https://i.imgur.com/iIwgmZp.png`Judgement
+Whats the name of this character? https://i.imgur.com/HwzlYXD.png`Leoni`Leoni Adler
+Who is the Emperor of Hieron?`Hartmann Adler`Adler`Hartmann
+What is the Capital of Hieron?`Hieracon
+What is the Capital of Union?`Spezia
+What is the name of the starting area of the Habichts?`Eltern Village`Eltern
+What is the name of the starting area of the Sylvan Elves?`El Gradis
+What is the name of the starting area of the Lupus?`Eltern Village`Eltern
+What is the name of the starting area of the Amistads?`Padana Village
+What is the name of the starting area of the Panteras?`Shaqqara Fortress
+What is the name of the starting area of the Mascu?`Ban Senn
+What is the name of the continent the two factions fight on?`Zion
+What race flew on an airship to the Zion continent?`Mascu
+????????r are the descendants of barbarian Altoque warriors that once threatened the Lumen Empire.`Berserker`Berserkers
+What class is called"The Protector of the battlefield"?`Guardian
+What class is called "Death from afar"?`Ranger
+What class is called "The light of recovery"`Paladin
+Which class is considered "The scholar who studies the provenance of all things"?`Mage
+What class specific resource do Mages, Paladins, and Mystics use?`Mana
+What is one of the elements of used by Mage's elemental magic?`Fire`Ice`Wind
+Which race does this symbol represent? https://imgur.com/jxEZglM.png`Amistad
+Which race does this symbol represent? https://imgur.com/DFhPpvQ.png`Aqua Elf
+Which race does this symbol represent? https://imgur.com/QXSB6Bi.png`Habicht
+Which race does this symbol represent? https://imgur.com/oH73U0R.png`Lupus
+Which race does this symbol represent? https://imgur.com/mCJ9Yoi.png`Mascu
+Which race does this symbol represent? https://imgur.com/lIJbmS4.png`Pantera
+Which race does this symbol represent? https://imgur.com/CRwNG4L.png`Sylvan Elf
+How many races are in Bless Online?`7
+Name one of the neutral races.`Mascu`Siren
+Berserkers brandish a big and powerful two-handed ??? and they wear sturdy armor in order to receive their enemy’s attacks with their bodies.`Axe
+Guardians arm themselves with a Shield and a Sw??? and protect their whole body with heavy armor.`Sword
+Rangers prefer long-range weapons like ???, and with astonishing concentration shoot extremely precise arrows.`Bows
+What weapons do Mages use? `Wand`Staff
+The paladin, who uses both blessings and curses simultaneously during combat, equips a powerful iron /M??? and firm Armor.`Mace`mace
+What weapons do Assassins use?`Daggers
+What is the name of this unreleased Race? https://i.imgur.com/Ku19DzP.png`Siren
+The ???a ?l??? are exiled elves defying a predetermined fate; a group that inherited the Millennial Kingdom’s magical spirit. They challenge their fate of a race destined to ruin.`Aqua Elves
+The ??n???? is a race that reveres only strength and martial arts. Originally living in scattered tribes, the ??n???? built a powerful kingdom in the desert fortress Saqqara after the rise of ??n???? King Murabi.`Pantera
+An alliance of liberated cities that gained independence from the empire. The ???s???, who consider themselves to be the true descendants of the Holy Lumen Empire, are intelligent, lively, and passionate people.`Amistad
+Since the ??s?? are foreigners, they were once a cause for alarm on the continent. Now, they are in charge of the continent’s commerce and industry.`Mascu
+Known as the Holy Empire of Light since the Dark Ages, the ??????t? value bravery, honor, and chivalry, and are successors of the Holy Emperor Harman and the Great Emperor Eiger`Habichts
+The /S????? ???e? are descendants of a beautiful and noble Millennial Kingdom that once oversaw a glorious era of prosperity. They now live deep in the forest where they protect the Tree of Life.`Sylvan Elves
+The ??p?? is a peaceful race that loves nature, but can suddenly turn into ferocious beasts if their wild nature is provoked.`Lupus
