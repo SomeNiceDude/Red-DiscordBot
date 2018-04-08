@@ -11,7 +11,7 @@ import asyncio
 import chardet
 
 DEFAULTS = {"MAX_SCORE"    : 10,
-            "TIMEOUT"      : 120,
+            "TIMEOUT"      : 12000,
             "DELAY"        : 15,
             "BOT_PLAYS"    : False,
             "REVEAL_ANSWER": True}
@@ -35,7 +35,7 @@ class Trivia:
         server = ctx.message.server
         if ctx.invoked_subcommand is None:
             settings = self.settings[server.id]
-            msg = box("Red gains points: {BOT_PLAYS}\n"
+            msg = box(
                       "Seconds to answer: {DELAY}\n"
                       "Points to win: {MAX_SCORE}\n"
                       "Reveal answer on timeout: {REVEAL_ANSWER}\n"
@@ -67,7 +67,6 @@ class Trivia:
 
     @triviaset.command(pass_context=True)
     async def botplays(self, ctx):
-        """Red gains points"""
         server = ctx.message.server
         if self.settings[server.id]["BOT_PLAYS"]:
             self.settings[server.id]["BOT_PLAYS"] = False
@@ -99,7 +98,7 @@ class Trivia:
             try:
                 trivia_list = self.parse_trivia_list(list_name)
             except FileNotFoundError:
-                await self.bot.say("That trivia list doesn't exist.")
+                await self.bot.say("Error: Please use :trivia start to start a new game")
             except Exception as e:
                 print(e)
                 await self.bot.say("Error loading the trivia list.")
@@ -108,8 +107,6 @@ class Trivia:
                 t = TriviaSession(self.bot, trivia_list, message, settings)
                 self.trivia_sessions.append(t)
                 await t.new_question()
-        else:
-            await self.bot.say("A trivia session is already ongoing in this channel.")
 
     @trivia.group(name="stop", pass_context=True, no_pm=True)
     async def trivia_stop(self, ctx):
@@ -206,12 +203,10 @@ class TriviaSession():
     def __init__(self, bot, trivia_list, message, settings):
         self.bot = bot
         self.reveal_messages = ("I know this one! {}!",
-                                "Easy: {}.",
-                                "Oh really? It's {} of course.")
-        self.fail_messages = ("To the next one I guess...",
-                              "Moving on...",
-                              "I'm sure you'll know the answer of the next one.",
-                              "\N{PENSIVE FACE} Next one.")
+                                "Nyahahahaha...the answer is {} of course!",
+                                "Even my little piggy knows! The answer is {} of course.")
+        self.fail_messages = ("The time is for this question is over. Most answers can be found on <https://blessonline.gamepedia.com/>",
+                              "The time is for this question is over. Most answers can be found on <https://blessonline.gamepedia.com/>")
         self.current_line = None # {"QUESTION" : "String", "ANSWERS" : []}
         self.question_list = trivia_list
         self.channel = message.channel
@@ -278,9 +273,9 @@ class TriviaSession():
                 await self.new_question()
 
     async def send_table(self):
-        t = "+ Results: \n\n"
+        t = "Results for this round. The next one will begin shortly. \n\n"
         for user, score in self.scores.most_common():
-            t += "+ {}\t{}\n".format(user, score)
+            t += "{}\t{} Points\n".format(user, score)
         await self.bot.say(box(t, lang="diff"))
 
     async def check_answer(self, message):
@@ -308,7 +303,7 @@ class TriviaSession():
             self.current_line = None
             self.status = "correct answer"
             self.scores[message.author] += 1
-            msg = "You got it {}! **+1** to you!".format(message.author.name)
+            msg = "{}'s answer is correct! That's one point for you!".format(message.author.name)
             await self.bot.send_message(message.channel, msg)
 
 
